@@ -7,24 +7,6 @@ async function getCustomers() {
     let response = await fetch(url);
     let json = await response.json();
     return json;
-    /*
-    return [
-        {
-            "id": 1,
-            "firstname": "Lucas",
-            "lastname": "Moy",
-            "email": "lucasmoy@gmail.com",
-            "address": "Siempre viva 123"
-        },
-        {
-            "id": 2,
-            "firstname": "Maria",
-            "lastname": "Moy",
-            "email": "mariamoy@gmail.com",
-            "address": "Siempre viva 123"
-        }
-    ];
-    */
 }
 
 async function renderCustomers() {
